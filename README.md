@@ -9,5 +9,5 @@ Create Attack 6 ist ein Minecraft Modpack, das dich in eine Welt voller Maschine
 ### Features
 
 - Kompakteres Modpack: Schlanker als die Vorgängerversionen, um auf mehr Geräten lauffähig zu sein.
-- Minecraft Version 1.18.2: Kompatibel mit Minecraft Version 1.18.2, was eine stabilere und optimierte Spielerfahrung bietet.
+- Kompatibel mit Minecraft Version 1.18.2, was eine stabilere und optimierte Spielerfahrung bietet.
 - Benutzerdefienierte Craftingrezepte
