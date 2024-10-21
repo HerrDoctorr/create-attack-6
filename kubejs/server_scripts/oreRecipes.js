@@ -26,41 +26,38 @@ onEvent("recipes", (event) => {
         ]
     })
 
-    // Melten Copper
-    event.custom({
-        type: "create:mixing",
-        ingredients: [
-            Item.of("minecraft:copper_ingot")
-        ],
-        results: [
-            {
-                fluid: "kubejs:molten_copper",
-                amount: 100
-            }
-        ]
-    })
-
     // Copper Ingot
     event.custom({
-        type: "create:compacting",
+        type: "create:splashing",
         ingredients: [
-            {
-                fluid: "kubejs:molten_copper",
-                amount: 100
-            }
+            Item.of("minecraft:iron_ingot")
         ],
         results: [
-            Item.of("minecraft:copper_ingot")
+            Item.of("create_attack_6:rusty_iron_light")
         ]
     })
     event.custom({
-        type: "create:mixing",
+        type: "create:splashing",
         ingredients: [
-            Item.of("minecraft:brick"),
-            {
-                fluid: "kubejs:molten_copper",
-                amount: 75
-            }
+            Item.of("create_attack_6:rusty_iron_light")
+        ],
+        results: [
+            Item.of("create_attack_6:rusty_iron_middle")
+        ]
+    })
+    event.custom({
+        type: "create:splashing",
+        ingredients: [
+            Item.of("create_attack_6:rusty_iron_middle")
+        ],
+        results: [
+            Item.of("create_attack_6:rusty_iron_strong")
+        ]
+    })
+    event.custom({
+        type: "create:sandpaper_polishing",
+        ingredients: [
+            Item.of("create_attack_6:rusty_iron_strong")
         ],
         results: [
             Item.of("minecraft:copper_ingot")
