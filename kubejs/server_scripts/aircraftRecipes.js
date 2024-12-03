@@ -252,7 +252,7 @@ onEvent("recipes", (event) => {
     event.custom({
         type: "create:mixing",
         ingredients: [
-            Item.of("immersive_aircraft:propeller"),
+            Item.of("create:propeller"),
             Item.of("create:brass_ingot")
         ],
         results: [
